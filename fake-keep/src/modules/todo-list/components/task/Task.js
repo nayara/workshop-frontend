@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './task.css'
+
 function Task() {
   return(
     <label className="task">
