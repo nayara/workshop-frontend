@@ -2,12 +2,14 @@ import React from 'react';
 
 import './task.css'
 
-function Task() {
+function Task(props) {
   return(
-    <label className="task">
-      <input type="checkbox" />
-      Conferir se o lixo foi retirado
-    </label>
+    <li>
+      <label className="task">
+        <input type="checkbox" />
+        {props.title}
+      </label>
+    </li>
   );
   
 }

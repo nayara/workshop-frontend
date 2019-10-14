@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import "./task-list.css"
 import Task from '../task/Task';
 
 function TaskList () {
+  const [taskList] = useState([
+    { title: "Learn about React" },
+    { title: "Meet friend for lunch" },
+    { title: "Build really cool todo app" }
+  ]);
+
   return(
     <div>
       <header className="task-list-title">Notas</header>
@@ -12,7 +18,9 @@ function TaskList () {
           <h1 className="task-list-box-title">Área e sala</h1>
         </header>
         <ul className="task-list">
-          <Task />
+          {
+            taskList.map((task, index) => <Task key={index} index={index} title={task.title}/>)
+          }
         </ul>
       </article>
     </div>
