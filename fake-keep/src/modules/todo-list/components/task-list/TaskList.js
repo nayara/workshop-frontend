@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import "./task-list.css"
 import Task from '../task/Task';
 
-class TaskList extends Component {
-  render(){
-    return(
+function TaskList () {
+  return(
     <div>
       <header className="task-list-title">Notas</header>
       <article className="task-list-box">
@@ -17,7 +16,6 @@ class TaskList extends Component {
         </ul>
       </article>
     </div>
-    );
-  };
+  );
 }
 export default TaskList;
