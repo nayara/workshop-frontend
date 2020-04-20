@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../header/Header';
-import NavBar from '../navbar/Navbar';
+import NavBar from '../navBar/NavBar';
 import TaskList from '../todo-list/components/task-list/TaskList';
 
 import "./app.css";
